@@ -26,6 +26,12 @@
           "options": {
             "tsConfig": "projects/brixx/tsconfig.spec.json"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/brixx/src/**/*.ts", "projects/brixx/src/**/*.html"]
+          }
         }
       }
     },
@@ -44,9 +50,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "projects/demo/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -55,9 +59,7 @@
                 "input": "projects/demo/public"
               }
             ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ]
+            "styles": ["projects/demo/src/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -101,10 +103,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/demo/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -113,9 +112,13 @@
                 "input": "projects/demo/public"
               }
             ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ]
+            "styles": ["projects/demo/src/styles.scss"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/demo/src/**/*.ts", "projects/demo/src/**/*.html"]
           }
         }
       }

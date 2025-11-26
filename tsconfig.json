@@ -4,9 +4,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "brixx": [
-        "./dist/brixx"
-      ]
+      "brixx": ["./dist/brixx"]
     },
     "strict": true,
     "noImplicitOverride": true,
