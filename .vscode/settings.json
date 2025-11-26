@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.preferences.organizeImports": {
+    "accentCollation": true
+  },
+  "workbench.colorTheme": "Dracula Theme Soft",
+  "workbench.iconTheme": "material-icon-theme"
+}
