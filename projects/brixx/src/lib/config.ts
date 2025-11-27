@@ -1,8 +1,13 @@
+import type { ValidationConfig } from './validation.util';
+
 export interface Config {
-  label: string;
-  isRequired: boolean;
-  isReadOnly: boolean;
-  metadata: Metadata;
+  key: string;
+  type: FieldType;
+  label?: string;
+  isRequired?: boolean;
+  isReadOnly?: boolean;
+  validation?: ValidationConfig;
+  metadata?: Metadata;
 }
 
 export interface Metadata {
@@ -10,7 +15,7 @@ export interface Metadata {
 }
 
 export enum FieldType {
-  STRING = 'string',
+  TEXT = 'text',
   NUMBER = 'number',
   DATE = 'date',
   SELECT = 'select',

@@ -3,9 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
     "esModuleInterop": true,
     "paths": {
-      "brixx": ["./dist/brixx"]
+      "brixx": ["./dist/brixx"],
+      "@brixx": ["./dist/brixx"],
+      "@brixx/*": ["./dist/brixx/*"]
     },
     "strict": true,
     "noImplicitOverride": true,
